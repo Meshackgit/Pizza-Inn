@@ -1,13 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza-Inn</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark kichwa">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fas fa-utensils"></i>Mesh Pizza</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse key1" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#order">Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#menu">Menu</a>
+          </li>
+         
+      </div>
+    </div>
+  </nav>
+    <!-- Header section -->
+    <div class="landing" id="home">
+      <h1 class="welcome">Welcome</h1><br>
+      <p1>To</p1><br>
+      <p2>Mesh Pizza</p2><br>
+      <p>Now with a new and wild Taste Of Freshness And Ultimate Class</p>
+      <button class="order">Order</button><br />
+      <button class="order">Order Now</button>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="./media/slide2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Smaph Pizza</h5>
+            <p class="card-text">With rare extracts of corn oil and juice splash.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Order Now</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <h1 id="menu">menu</h1>
+          <img src="./media/home2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Smoke Pizza</h5>
+            <p class="card-text">With rich flavour lettuce and brocolli.Feel the french Muse</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted" href="#order">Order Now</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./media/home3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Order Now</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- <h1>OUR MENU</h1> -->
+  
+    <!-- Order Section -->
+    <div class="picha-ya-nyuma">
+
+    <div class="orders" id="order">
+      <h1 class="text-center" id="order-pizza">Place Your Order Here Please</h1>
+      <div class="form-group row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8 order-overlay text-center">
+              <form class="col-sm-6 offset-sm-3 text-center">
+                  <label>Select your pizza Flavour Please:</label>
+                  <select class="custom-select custom-select-md mb-3 flavour" required>
+                    
+                      <option value="vegtikka">Veg Tikka</option>
+                      <option value="chickentikka">Chicken Tikka</option>
+                      <option value="periperi">Peri-Peri Chicken</option>
+                      <option value="bbq">BBQ Steak</option>
+                      <option value="boerewors">Boerewors</option>
+                      <option value="hawaiian">Hawaiian</option>
+                      <option value="mushroom">Chicken and Mushroom</option>
+                      <option value="regina">Regina Pizza</option>
+                  </select>
+                  <label>Choose Pizza Size Please:</label>
+                  <select class="custom-select custom-select-md mb-3 size" id="size" required>
+                 
+                      <option value="regular">Regular</option>
+                      <option value="medium">Medium</option>
+                      <option value="large">Large</option>
+                  </select>
+                  <label for="crust">Choose your favorite Crust Please:</label>
+                  <select class="custom-select custom-select-md mb-3 crust" id="crust" required>
+                   
+                      <option value="thin">Thin Crust  @Ksh.100/=</option>
+                      <option value="thick">Thick Crust @Ksh.150/=</option>
+                      <option value="flatbread">FlatBread Crust @Ksh.180/=</option>
+                      <option value="custom">Custom Crust @Ksh.280/=</option>
+                  </select>
+                  <label>Select Your favourite Toppings Please</label>
+                  <select class="custom-select custom-select-md mb-3 topping" id="toppings" required>
+                    
+                      <option value="tomato">Tomato @Ksh.80/=</option>
+                      <option value="onions">Onions @Ksh.80/=</option>
+                      <option value="mushroom">Mushroom @Ksh.80/=</option>
+                      <option value="greenpepper">Green Pepper @Ksh.80/=</option>
+                      <option value=""></option>
+                      <option value="olives">Olives @Ksh.120/=</option>
+                      <option value="pineapple">Pineapple @Ksh.120/=</option>
+                      <option value="sweetcorn">Sweet Corn @Ksh.120/=</option>
+                      <option value="macon">Macon @Ksh.120/=</option>
+                      <option value="mince">Mince @Ksh.120/=</option>
+                      <option value=""></option>
+                      <option value="beef">Beef Peperoni @Ksh.170/=</option>
+                      <option value="chicken">Periperi Chicken @Ksh.170/=</option>
+                  </select>
+                  <label for="number">Number of Pizza's</label>
+                  <input type="number" class="form-control number" id="number" placeholder="Number of pizzas" min="1" required>
+  
+  
+              </form>
+              <a href="#summary">
+                  <button type="submit" class="btn btn-success checkout" id="checkout">
+                      Checkout
+                  </button>
+              </a>
+  
+          </div>
+          <div class="col-sm-2"></div>
+      </div>
+  </div>
+  
+  <div class="order-summary" id="sum-order">
+      <h1 class="text-center" id="summary">Your Order Display</h1>
+      <h2 class="text-center summary">Here is  your order displays:</h2>
+      <ol id="list" class="text-center sum">
+      </ol>
+  
+  
+      <div class="cdata-overlay">
+          <div class="customerdata row">
+              <div class="col-sm-3"></div>
+              <form action="" class="form-group col-sm-6 data">
+                  <input type="text" class="form-control cdata" placeholder="Enter your Name:" required>
+                  <input type="text" class="form-control cdata" placeholder="Enter your phone number:" required>
+                  <input type="text" class="form-control cdata" placeholder="Enter the location: " required>
+                  <button class="btn bg-info text-center d-block mx-auto go deliva">Make Delivery</button>
+              </form>
+  
+              <div class="col-sm-3"></div>
+          </div>
+      </div>
+      <div class="d-block mx-auto text-center kansa">
+          <button class='deliver'>Make Delivery</button>
+          <button class='delivernot'>Pick Up</button>
+      </div>
+  </div>
+    </div>
+  
+  <!-- Customer Reviews -->
+
+  <section class="review" id="review">
+    <div class="customer">
+    <h1 class="heading"> our customers' <span>reviews</span></h1>
+    </div>
+    <div class="box-container">
+        <div class="box">
+            <img src="./media/m.jpg" alt="">
+            <h3>Idris Mwangi</h3>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+        </div>
+        <p>This is the best online pizza store in the country right now.Their pizza is so irresistably sweet.I can't wait to place another order!Yummy Yummy!</p>
+    </div>
+    
+    <div class="box">
+        <img src="./media/karen.jpg" alt="">
+        <h3>Karen Chepet</h3>
+        <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+
+    <p>Omg!Omg! I've been looking for people who actually pay attention to detail,and this website Omg! Ngl it's the best,they pack your food so cute,awwwwww!.</p>
+</div>
+<div class="box">
+    <img src="./media/babe.jpg" alt="">
+    <h3>Khloe Khadija</h3>
+    <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+<p>I'm the heaviest most heftiest feeder you'll ever meet,hands down but when I tried their pizza jeeeez it's like tasting heavenly made food.I love you so much.But please deliver my order on time next time I can't wait.lol!</p>
+</div>
+
+</div>
+
+</section>
+
     <script src="Js/scripts.js"></script>
-</body>
+  </body>
 </html>
