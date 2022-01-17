@@ -9,7 +9,7 @@
     box-sizing: border-box;
   }
   .landing{
-      background-image:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../media/pik.jpg');
+      background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../media/pik.jpg');
       background-position: center;
       background-size: cover;
       height: 100vh;
@@ -83,10 +83,11 @@ body {
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color:rgba(0, 0, 0, 0.9);
+  background-color:#000;
   margin: 8px;
   color: #f7f7f7;
   border-radius: 16px;
+  font-size: 20px;
   
 }
 
@@ -98,6 +99,7 @@ body {
 .card-footer{
   border-radius: 16px;
   background: #000;
+  font-size: 20px;
 }
 .card-footer:hover{
   background: #A9927D;
@@ -112,17 +114,18 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  color: #f7f7f7;
+  color: #F7F7F7;
 }
 .steps{
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
   padding: 1rem 0;
 }
 
 .steps-container{
-  background-color: #050505;
+  background: #000;
+  border-radius: 16px;
 }
 
 
@@ -135,12 +138,12 @@ body {
 .steps .box img {
   border-radius: 50%;
   border: 0.5rem solid #fff;
-  box-shadow: 0.5rem 0.9rem #f7f7f7;;
+  box-shadow: 0.5rem 0.9rem #F7F7F7;
 }
 
 .steps .box h3{
   font-size: 2rem;
-  color: #f7f7f7;
+  color: #F7F7F7;
   padding: 1rem;
 }
 
@@ -399,46 +402,50 @@ h4 {
   justify-content: center;
 }
 
+.icon{
+  color: #d13531;
+}
+
+.fot{
+  color: #f7f7f7;
+}
 @media (max-width:991px)
 {
- 
-}
-@media (max-width:767px)
-{
-  
-}
-
-@media (max-width:767px)
-{
-  
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-
-  .menu{
-    width: 100%;
-    display: block;
+  body {
+    background-color: blue;
   }
 }
+
 
 
   @media screen and (max-width:1200px){
     
  .welcome{
-  font-family: 'Cookie', cursive;
-  font-size: 70px;
-  color: #F26430;
-  
+  font-family: 'Abril Fatface', cursive;
+  font-size: 8rem;
+  margin-top:-30%;
+  color: #000; 
 }
-.container p{
+.landing p1{
   position: absolute;
-  margin-top: 20%;
+  margin-top: -9%;
   color: #F7f7f7;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-family: 'Cookie', cursive;
+}
+
+.landing p2{
+  position: absolute;
+  margin-top: 1%;
+  color: #F7f7f7;
+  font-size: 2.5rem;
+  font-family: 'Cookie', cursive;
+}
+.landing p{
+  position: absolute;
+  margin-top: 15%;
+  color: #F7f7f7;
+  font-size: 1.8rem;
   font-family: 'Cookie', cursive;
 }
 
@@ -456,6 +463,58 @@ button.order{
 
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .welcome{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 7rem;
+    color: #000;
+    margin-top: 1%;
+    
+  }
+  
+  .landing p{
+    position: absolute;
+    margin-top: 50%;
+    color: #F7f7f7;
+    font-size: 1.6rem;
+    font-family: 'Cookie', cursive;
+  }
+  .landing p1{
+    position: absolute;
+    margin-top: 23%;
+    color: #F7f7f7;
+    font-size: 2.5rem;
+    font-family: 'Cookie', cursive;
+  }
+  
+  .landing p2{
+    position: absolute;
+    margin-top: 35%;
+    color: #F7f7f7;
+    font-size: 2.5rem;
+    font-family: 'Cookie', cursive;
+  }
+  
+  
+  
+  button.order{
+    margin-top: 70%;
+    position: absolute;
+    padding: 15px 5px 15px 5px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    transition: 2s;
+    background-color:#f7f7f7;
+  }
+  
+}
 
 
   
